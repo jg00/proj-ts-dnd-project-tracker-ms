@@ -1,11 +1,13 @@
 {
-  "name": "Drag and Drop",
+  "name": "drag_and_drop",
   "version": "1.0.0",
   "description": "drag and drop",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc -w"
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.prod.js",
+    "build-dev": "webpack"
   },
   "keywords": [
     "typescript",
@@ -14,6 +16,12 @@
   "author": "jg",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "clean-webpack-plugin": "^3.0.0",
+    "lite-server": "^2.5.4",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.9.10",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.3"
   }
 }

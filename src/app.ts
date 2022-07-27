@@ -26,14 +26,16 @@
   Also note before webpack at this point all our files will require multiple
   network requests for every import.
 */
-import { ProjectInput } from "./components/project-input.js";
-import { ProjectList } from "./components/project-list.js";
+import { ProjectInput } from "./components/project-input";
+import { ProjectList } from "./components/project-list";
 
 // namespace App {
 
 new ProjectInput();
 new ProjectList("active");
 new ProjectList("finished");
+
+console.log("Hello world!!");
 
 // const prjInput = new ProjectInput();
 // const activePrjList = new ProjectList("active");

@@ -5,10 +5,10 @@
 /// <reference path="../models/drag-drop.ts"/>
 */
 
-import { Draggable } from "../models/drag-drop.js"; // Note .js extension
-import { Project } from "../models/project.js";
-import Component from "./base-component.js";
-import { autoBind } from "../decorators/autobind.js";
+import { Draggable } from "../models/drag-drop"; // Note .js extension not needed once we use webpack
+import { Project } from "../models/project";
+import Component from "./base-component";
+import { autoBind } from "../decorators/autobind";
 
 // namespace App {
 // __ VII ProjectItem Class - responsible for rendering a single project item. To it's constructor pass in hostId (ie either the active-persons-list or finished-persons-list ul list) and pass in the data (ie project instance).

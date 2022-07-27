@@ -5,10 +5,10 @@
 /// <reference path="../state/project-state.ts"/>
 */
 
-import Component from "./base-component.js"; // Import a default export
-import * as Validation from "../util/validation.js"; // Grouping
-import { autoBind as Autobind } from "../decorators/autobind.js"; // Alias
-import { projectState } from "../state/project-state.js";
+import Component from "./base-component"; // Import a default export
+import * as Validation from "../util/validation"; // Grouping
+import { autoBind as Autobind } from "../decorators/autobind"; // Alias
+import { projectState } from "../state/project-state";
 
 // namespace App {
 
